@@ -125,6 +125,9 @@ var Hue = function(opt) {
   }
   
   // 参考jQuery ...
+// 将新生成的对象的prototype属性赋值为构造函数的prototype属性，
+// 使得通过构造函数创建的所有对象可以共享相同的原型。
+// 这意味着同一个构造函数创建的所有对象都继承自一个相同的原型对象，因此它们都是同一个类的对象
   Hue.prototype.init.prototype = Hue.prototype;
   
   
